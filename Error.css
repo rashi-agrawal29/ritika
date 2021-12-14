@@ -1,0 +1,29 @@
+
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+<script>
+var xValues = ["Desktop", "Tablet", "Mobile"];
+var yValues = [63, 15, 22];
+var barColors = [
+  "skyblue",
+  "IndianRed",
+  "lightSalmon"
+  
+];
+
+new Chart("myChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Traffic by Device"
+    }
+  }
+});

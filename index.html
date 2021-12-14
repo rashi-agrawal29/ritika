@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="Dashboard.css">
+<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+    <header class="design">
+  <nav>
+  <i class='bx bx-search-alt-2'></i>
+  <i class='bx bxs-user'></i>
+  <i class='bx bxs-bell-ring'></i>
+  <img src="C:\Users\hp\Desktop\Final Dashboard\static\user1.png" alt="user">
+  </nav>
+  </header>
+<div class="sidebar">
+<div class="log_details">
+  <i class='bx bxs-pyramid'></i>
+    <div class="multibox">
+      <h5 style="color:#fff">ACME INC</h5>
+    </div>
+</div>
+<ul class="nav-links">
+ <li>
+        <a href="index.html">
+        <i class='bx bxs-dashboard'></i>
+        <span class="link_name">Dashboard</span></a>
+        </li>
+       <li>
+        <a href="#">
+        <i class='bx bxs-user-circle'></i>
+        <span class="link_name">Customers</span></a>
+        </li>
+        <li>
+        <a href="#">
+        <i class='bx bxs-shopping-bag'></i>
+        <span class="link_name">Products</span></a>
+        </li>
+        <li>
+        <a href="Account.html">
+        <i class='bx bxs-user'></i>
+        <span class="link_name">Account</span></a>
+        </li>
+        <li>
+        <a href="#">
+        <i class='bx bx-cog'></i>
+        <span class="link_name">Settings</span></a>
+        </li>
+        <li>
+        <a href="Login.html">
+        <i class='bx bxs-lock-alt'></i>
+        <span class="link_name">Login</span></a>
+        </li>
+        <li>
+        <a href="#">
+        <i class='bx bxs-user-plus'></i>
+        <span class="link_name">Register</span></a>
+        </li>
+        <li>
+        <a href="Error.html">
+        <i class='bx bx-error'></i>
+        <span class="link_name">Error</span></a>
+        </li>
+        </ul>
+</div>
+<!-- Home-content -->
+
+<section class="home-section">
+<!-- home-content-->
+<div class="home-content">
+<div class="overview-boxes">
+<div class="box">
+<div class="left-side">
+  <div class="add">
+<div class="box_topic">BUDGET</div>
+<div class="number">$24K</div>
+<div class="special">
+<div class="barcode">
+<i class='bx bxs-barcode'></i>
+</div>
+</div>
+</div>
+<div class="indicator">
+<i class='bx bx-down-arrow-alt'></i>
+<span class="text">12% Since last month</span>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="left-side">
+<div class="box_topic">TOTAL CUSTOMERS</div>
+<div class="number">1,6K</div>
+<div class="userimage">
+<i class='bx bxs-user'></i>
+</div>
+<div class="indicator">
+<i class='bx bx-up-arrow-alt'></i>
+<span class="text">16% Since last month</span>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="left-side">
+<div class="box_topic1">Tasks Progress</div>
+<div class="number1">75.5%</div>
+<div class="task">
+<i class='bx bxs-bar-chart-alt-2'></i>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="left-side">
+<div class="box_topic2">TOTAL PROFIT</div>
+<div class="number2">$23K</div>
+<div class="indicator">
+</div>
+<div class="dollar">
+<i class='bx bxs-dollar-circle'></i>
+</div>
+</div>
+</div>
+</div>
+<!--Graph-->
+<div class="graphBox">
+  <div class="box">
+    <h2>Latest Sales</h2><canvas id="myChart" ></canvas></div>
+  <div class="box"><h2> Traffic By Device</h2><hr class="new"><canvas id="pie" ></canvas>
+  </div>
+</div>
+</script>
+<!-- Sales-Content -->
+<div class="sales-boxes">
+  <div class="top-salebox">
+    <div class="title">Latest Products</div>
+    <hr class="new1">
+    <div class=" sales-details">
+      <ul class="details"> 
+    <li>
+    <div class="img1">
+      <img src="dropbox.png" alt="Dropbox">
+    </div>
+    <div class="extra">
+    <span class="product_name">Dropbox</span>
+    <span class="price">Updated about 3 hours</span>
+    </div>
+    </li>
+    <li>
+      <div class="img1">
+     <img src="C:\Users\hp\Desktop\Final Dashboard\static\medium.png" alt="Dropbox">
+      </div>
+     <div class="extra">
+    <span class="product_name">Medium Corporation</span>
+     <span class="price">Updated about 3 hours</span>
+     </div>
+    </li>
+    <li>
+      <div class="img1">
+      <img src="C:\Users\hp\Desktop\Final Dashboard\static\slack.png" alt="Dropbox">
+      </div>
+      <div class="extra">
+    <span class="product_name">Slack</span>
+    <span class="price">Updated about 4 hours</span>
+      </div>
+    </li>
+    <li>
+      <div class="img1">
+      <img src="C:\Users\hp\Desktop\Final Dashboard\static\lyft.png" alt="Dropbox">
+      </div>
+      <div class="extra">
+      <span class="product_name">Lyft</span>
+    <span class="price">Updated about 6 hours</span>
+      </div>
+    </li>
+    <li>
+      <div class="img1">
+      <img src="C:\Users\hp\Desktop\Final Dashboard\static\git.png" alt="Dropbox">
+      </div>
+      <div class="extra">
+    <span class="product_name">GitHub</span>
+    <span class="price">Updated about 10 hours</span>
+      </div>
+    </li>
+  </ul>
+    </div>
+  </div>
+  <!--right side-->
+  <div class="recent-salebox">
+  <div class="title1">Latest Orders</div>
+  <div class="sales-details">
+    <table class="table">
+      <tr>
+<th>ORDER REF</th>
+<th>CUSTOMER</th>
+<th>DATE</th>
+      </tr>
+      <tr>
+        <td>CDD1049</td>
+        <td>Ekaterina Tankova</td>
+        <td>12/04/2019</td>
+      </tr>
+      <tr>
+        <td>CDD1048</td>
+        <td>Cao Yu</td>
+        <td>12/04/2019</td>
+      </tr>
+      <tr>
+        <td>CDD1047</td>
+        <td>Alexa Richardson</td>
+        <td>12/04/2019</td>
+      </tr>
+      <tr>
+        <td>CDD1046</td>
+        <td>Anje Keizer</td>
+        <td>12/04/2019</td>
+      </tr>
+      <tr>
+        <td>CDD1045</td>
+        <td>Adam Denisov</td>
+        <td>12/04/2019</td>
+      </tr>
+      <tr>
+        <td>CDD1044</td>
+        <td>Adam Denisov</td>
+        <td>12/04/2019</td>
+      </tr>
+     </table> 
+     </div>
+</div>
+</div>
+</div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.1/dist/chart.min.js"></script>
+<script src="my_chart.js"></script>
+</body>
+</html>
